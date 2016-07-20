@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>    
 
-    <groupId>com.tascape.qa</groupId>
-    <artifactId>th-lipermi</artifactId>
-    <version>1.0.0</version>
+    <groupId>com.tascape</groupId>
+    <artifactId>reactor-lipermi</artifactId>
+    <version>1.2.0</version>
     <packaging>jar</packaging>
 
-    <name>th-lipermi</name>
+    <name>reactor-lipermi</name>
     <description>Java RMI</description>
 
     <properties>
@@ -20,7 +20,7 @@
         <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
     </properties>
 
-    <url>https://github.com/tascape/th-lipermi</url>
+    <url>https://github.com/tascape/reactor-lipermi</url>
     <licenses>
         <license>
             <name>The Apache License, Version 2.0</name>
@@ -36,9 +36,9 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:git:git@github.com:tascape/th-lipermi.git</connection>
-        <developerConnection>scm:git:git@github.com:tascape/th-lipermi.git</developerConnection>
-        <url>git:git@github.com:tascape/th-lipermi.git</url>
+        <connection>scm:git:git@github.com:tascape/reactor-lipermi.git</connection>
+        <developerConnection>scm:git:git@github.com:tascape/reactor-lipermi.git</developerConnection>
+        <url>git:git@github.com:tascape/reactor-lipermi.git</url>
     </scm>
 
     <build>
@@ -59,7 +59,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.10.3</version>
+                <version>2.10.4</version>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
@@ -86,7 +86,7 @@
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.5</version>
+                <version>1.6.7</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>ossrh</serverId>
@@ -107,4 +107,12 @@
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>oss-sonatype</id>
+            <name>oss-sonatype</name>
+            <url>https://oss.sonatype.org/content/repositories/releases/</url>
+        </repository>
+    </repositories>
 </project>
